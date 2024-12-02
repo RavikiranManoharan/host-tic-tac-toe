@@ -1,0 +1,207 @@
+body{
+background-color: black;
+color: aqua;
+text-shadow: 0 0 10px aqua;
+font-family: harrington;
+}
+#tbl1{
+width: 400px;
+height: 600px;
+border-radius: 5px;
+box-shadow: 0 0 10px aqua;
+animation-name: glow;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+#tbl1 tr td:nth-child(2){
+border-left: 1px solid aqua;
+}
+#tbl1 tr td:nth-child(3){
+border-left: 1px solid aqua;
+}
+#tbl1 tr:nth-child(2) td{
+border-bottom: 1px solid aqua;
+border-top: 1px solid aqua;
+}
+@keyframe glow{
+50%{box-shadow: 0 0 10px aqua};
+}
+#btn1{
+background-color: black;
+border-color: aqua;
+width: 1px;
+height: 15px;
+border-radius: 5px;
+}
+#btn2{
+background-color: black;
+border-color: aqua;
+width: 1px;
+height: 15px;
+border-radius: 5px;
+}
+#btn3{
+background-color: black;
+border-color: aqua;
+width: 1px;
+height: 15px;
+border-radius: 5px;
+}
+#btn4{
+background-color: black;
+border-color: aqua;
+width: 1px;
+height: 15px;
+border-radius: 5px;
+}
+#btn5{
+background-color: black;
+border-color: aqua;
+width: 1px;
+height: 15px;
+border-radius: 5px;
+}
+#btn6{
+background-color: black;
+border-color: aqua;
+width: 1px;
+height: 15px;
+border-radius: 5px;
+}
+#btn7{
+background-color: black;
+border-color: aqua;
+width: 1px;
+height: 15px;
+border-radius: 5px;
+}
+#btn8{
+background-color: black;
+border-color: aqua;
+width: 1px;
+height: 15px;
+border-radius: 5px;
+}
+#btn9{
+background-color: black;
+border-color: aqua;
+width: 1px;
+height: 15px;
+border-radius: 5px;
+}
+#pg{
+width: 400px;
+height: 350px;
+box-shadow: 0 0 20px aqua;
+border-radius: 15px;
+}
+#pl1{
+background-color: black;
+border-radius: 5px;
+border-color: aqua;
+color: aqua;
+padding: 5px 5px;
+box-shadow: 0 0 10px aqua;
+font-family: harrington;
+}
+#pl2{
+background-color: black;
+border-radius: 5px;
+border-color: aqua;
+color: aqua;
+padding: 5px 5px;
+box-shadow: 0 0 10px aqua;
+font-family: harrington;
+}
+#pl{
+background-color: black;
+border-radius: 5px;
+border-color: aqua;
+color: aqua;
+padding: 5px 5px;
+box-shadow: 0 0 10px aqua;
+font-family: harrington;
+}
+#pl1:active{
+border-color: aqua;
+}
+#pl2:active{
+border-color:aqua;
+}
+#pl:active{
+border-color: aqua;
+}
+#sub{
+background-color: black;
+border-radius: 10px;
+border-color: aqua;
+color: aqua;
+box-shadow: 0 0 10px aqua;
+font-family: harrington;
+}
+#pg2{
+width: 300px;
+height: 150px;
+box-shadow: 0 0 10px aqua;
+border-radius: 15px;
+display: none;
+}
+#rpl{
+background-color: black;
+border-radius: 10px;
+border-color: aqua;
+color: aqua;
+box-shadow: 0 0 10px aqua;
+font-family: harrington;
+}
+#ins{
+background-color: black;
+border-radius: 10px;
+border-color: aqua;
+color: aqua;
+box-shadow: 0 0 10px aqua;
+font-family: harrington;
+}
+#pg3{
+width: 300px;
+height: 150px;
+box-shadow: 0 0 10px aqua;
+border-radius: 15px;
+padding: 5px 5px;
+display: none;
+}
+#tp{
+background-color: black;
+border-radius: 10px;
+border-color: aqua;
+color: aqua;
+box-shadow: 0 0 10px aqua;
+font-family: harrington;
+}
+#sp{
+background-color: black;
+border-radius: 10px;
+border-color: aqua;
+color: aqua;
+box-shadow: 0 0 10px aqua;
+font-family: harrington;
+}
+#tbl{
+width: 150px;
+height: 200px;
+border-radius: 5px;
+}
+#tbl tr td:nth-child(2){
+border-left: 1px solid aqua;
+}
+#tbl tr td:nth-child(3){
+border-left: 1px solid aqua;
+}
+#tbl tr:nth-child(2) td{
+border-bottom: 1px solid aqua;
+border-top: 1px solid aqua;
+}
+
+#tab-image-icn{
+border-radius: 15px;
+}
