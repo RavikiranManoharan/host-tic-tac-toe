@@ -1,12 +1,16 @@
-var plyr = 0
+var plyr = 0 // to find the player (but not needed in single player)
 
-var plar1=[]
+var plar1=[] //stores the values of player1
 
-var plar2=[]
+var plar2=[] //stores the values of player2
 
-var tie=0
+var tie=0 //counts the number of plays to find tie
 
-var len=0
+var len=0 //counts the number of plays usen in autoplay
+
+var auto_num =0 //to receive num of outoply globally
+
+var endCheck = 0;
 
 function pls1()
 {
@@ -208,6 +212,8 @@ function check1()
 {
 	//console.log(plar1)
 	
+	console.log("auto num",auto_num);
+	
 	var plr = localStorage.getItem("player");
 	
 	if(plar1.includes(1) && plar1.includes(2) && plar1.includes(3))
@@ -230,6 +236,8 @@ function check1()
 		k[6].style.display="none";
 		k[7].style.display="none";
 		k[8].style.display="none";
+		
+		endCheck++;
 	}
 	else if(plar1.includes(1) && plar1.includes(5) && plar1.includes(9))
 	{
@@ -251,6 +259,8 @@ function check1()
 		k[6].style.display="none";
 		k[7].style.display="none";
 		k[8].style.display="none";
+		
+		endCheck++;
 	}
 	else if(plar1.includes(1) && plar1.includes(4) && plar1.includes(7))
 	{
@@ -272,6 +282,8 @@ function check1()
 		k[6].style.display="none";
 		k[7].style.display="none";
 		k[8].style.display="none";
+		
+		endCheck++;
 	}
 	else if(plar1.includes(2) && plar1.includes(5) && plar1.includes(8))
 	{
@@ -293,6 +305,8 @@ function check1()
 		k[6].style.display="none";
 		k[7].style.display="none";
 		k[8].style.display="none";
+		
+		endCheck++;
 	}
 	else if(plar1.includes(3) && plar1.includes(5) && plar1.includes(7))
 	{
@@ -314,6 +328,8 @@ function check1()
 		k[6].style.display="none";
 		k[7].style.display="none";
 		k[8].style.display="none";
+		
+		endCheck++;
 	}
 	else if(plar1.includes(3) && plar1.includes(6) && plar1.includes(9))
 	{
@@ -335,6 +351,8 @@ function check1()
 		k[6].style.display="none";
 		k[7].style.display="none";
 		k[8].style.display="none";
+		
+		endCheck++;
 	}
 	else if(plar1.includes(4) && plar1.includes(5) && plar1.includes(6))
 	{
@@ -356,6 +374,8 @@ function check1()
 		k[6].style.display="none";
 		k[7].style.display="none";
 		k[8].style.display="none";
+		
+		endCheck++;
 	}
 	else if(plar1.includes(7) && plar1.includes(8) && plar1.includes(9))
 	{
@@ -377,6 +397,8 @@ function check1()
 		k[6].style.display="none";
 		k[7].style.display="none";
 		k[8].style.display="none";
+		
+		endCheck++;
 	}
 	else if(tie>=9)
 	{
@@ -396,6 +418,8 @@ function check1()
 		
 		var e = document.getElementById("pg2").style.display="block";
 		
+		endCheck++;
+		
 	}
 	
 	check2()
@@ -414,7 +438,7 @@ function check2()
 	
 	if(plar2.includes(1) && plar2.includes(2) && plar2.includes(3))
 	{
-		console.log("ck2")
+		//console.log("ck2")
 		
 		var a = document.getElementById("rlt").textContent="COMPUTER WON";
 		
@@ -435,10 +459,12 @@ function check2()
 		k[7].style.display="none";
 		k[8].style.display="none";
 		
+		endCheck++;
+		
 	}
 	else if(plar2.includes(1) && plar2.includes(5) && plar2.includes(9))
 	{
-		console.log("ck2")
+		//console.log("ck2")
 		
 		var a = document.getElementById("rlt").textContent="COMPUTER WON";
 		
@@ -458,10 +484,12 @@ function check2()
 		k[6].style.display="none";
 		k[7].style.display="none";
 		k[8].style.display="none";
+		
+		endCheck++;
 	}
 	else if(plar2.includes(1) && plar2.includes(4) && plar2.includes(7))
 	{
-		console.log("ck2")
+		//console.log("ck2")
 		
 		var a = document.getElementById("rlt").textContent="COMPUTER WON";
 		
@@ -481,10 +509,12 @@ function check2()
 		k[6].style.display="none";
 		k[7].style.display="none";
 		k[8].style.display="none";
+		
+		endCheck++;
 	}
 	else if(plar2.includes(2) && plar2.includes(5) && plar2.includes(8))
 	{
-		console.log("ck2")
+		//console.log("ck2")
 		
 		var a = document.getElementById("rlt").textContent="COMPUTER WON";
 		
@@ -504,10 +534,12 @@ function check2()
 		k[6].style.display="none";
 		k[7].style.display="none";
 		k[8].style.display="none";
+		
+		endCheck++;
 	}
 	else if(plar2.includes(3) && plar2.includes(5) && plar2.includes(7))
 	{
-		console.log("ck2")
+		//console.log("ck2")
 		
 		var a = document.getElementById("rlt").textContent="COMPUTER WON";
 		
@@ -527,10 +559,12 @@ function check2()
 		k[6].style.display="none";
 		k[7].style.display="none";
 		k[8].style.display="none";
+		
+		endCheck++;
 	}
 	else if(plar2.includes(3) && plar2.includes(6) && plar2.includes(9))
 	{
-		console.log("ck2")
+		//console.log("ck2")
 		
 		var a = document.getElementById("rlt").textContent="COMPUTER WON";
 		
@@ -550,10 +584,12 @@ function check2()
 		k[6].style.display="none";
 		k[7].style.display="none";
 		k[8].style.display="none";
+		
+		endCheck++;
 	}
 	else if(plar2.includes(4) && plar2.includes(5) && plar2.includes(6))
 	{
-		console.log("ck2")
+		//console.log("ck2")
 		
 		var a = document.getElementById("rlt").textContent="COMPUTER WON";
 		
@@ -573,10 +609,12 @@ function check2()
 		k[6].style.display="none";
 		k[7].style.display="none";
 		k[8].style.display="none";
+		
+		endCheck++;
 	}
 	else if(plar2.includes(7) && plar2.includes(8) && plar2.includes(9))
 	{
-		console.log("ck2")
+		//console.log("ck2")
 		
 		var a = document.getElementById("rlt").textContent="COMPUTER WON";
 		
@@ -596,10 +634,12 @@ function check2()
 		k[6].style.display="none";
 		k[7].style.display="none";
 		k[8].style.display="none";
+		
+		endCheck++;
 	}
 	else if(tie>=9)
 	{
-		console.log("ck2")
+		//console.log("ck2")
 		
 		var a = document.getElementById("rlt").textContent="TIE";
 		
@@ -617,6 +657,8 @@ function check2()
 		
 		var e = document.getElementById("pg2").style.display="block";
 		
+		endCheck++;
+		
 	}
 	
 }
@@ -627,8 +669,8 @@ function submit()
 	
 	var pl2 = document.getElementById("pl2").value;
 	
-	console.log(pl1)
-	console.log(pl2)
+	//console.log(pl1)
+	//console.log(pl2)
 	
 	localStorage.setItem("playerone",pl1);
 	
@@ -676,6 +718,7 @@ function autoply()
 			
 		var num = Math.floor(Math.random()*(10-1))+1;
 		
+		
 		//console.log(num)
 		
 		if(plar1.includes(num))
@@ -708,47 +751,17 @@ function autoply()
 					//console.log(tie)
 					
 					nu++
-				
-					var put = document.getElementById(num).textContent="O";
-				
-					//console.log(num);
+					if(endCheck==0)
+					{
 						
-					if(num==1)
-					{ 
-						var a = document.getElementById("btn1").style.display="none";
+						var put = document.getElementById(num).textContent="O";
+				
+						//console.log(num);
+					
+						var a = document.getElementById(`btn${num}`).style.display="none";
 					}
-					else if(num==2)
-					{ 
-						var a = document.getElementById("btn2").style.display="none";
-					}
-					else if(num==3)
-					{ 
-						var a = document.getElementById("btn3").style.display="none";
-					}
-					else if(num==4)
-					{ 
-						var a = document.getElementById("btn4").style.display="none";
-					}
-					else if(num==5)
-					{ 
-						var a = document.getElementById("btn5").style.display="none";
-					}
-					else if(num==6)
-					{ 
-						var a = document.getElementById("btn6").style.display="none";
-					}
-					else if(num==7)
-					{ 
-						var a = document.getElementById("btn7").style.display="none";
-					}
-					else if(num==8)
-					{ 
-						var a = document.getElementById("btn8").style.display="none";
-					}
-					else if(num==9)
-					{ 
-						var a = document.getElementById("btn9").style.display="none";
-					}
+					
+					
 				check2();
 				}
 			}
@@ -763,47 +776,17 @@ function autoply()
 				
 				len=2
 				nu++
+				if(endCheck==0)
+				{
+						
+					var put = document.getElementById(num).textContent="O";
+					
+					//console.log(num);
+					
+					var a = document.getElementById(`btn${num}`).style.display="none";
+				}
 				
-				var put = document.getElementById(num).textContent="O";
 				
-				//console.log(num);
-				
-				if(num==1)
-				{ 
-					var a = document.getElementById("btn1").style.display="none";
-				}
-				else if(num==2)
-				{ 
-					var a = document.getElementById("btn2").style.display="none";
-				}
-				else if(num==3)
-				{ 
-					var a = document.getElementById("btn3").style.display="none";
-				}
-				else if(num==4)
-				{ 
-					var a = document.getElementById("btn4").style.display="none";
-				}
-				else if(num==5)
-				{ 
-					var a = document.getElementById("btn5").style.display="none";
-				}
-				else if(num==6)
-				{ 
-					var a = document.getElementById("btn6").style.display="none";
-				}
-				else if(num==7)
-				{ 
-					var a = document.getElementById("btn7").style.display="none";
-				}
-				else if(num==8)
-				{ 
-					var a = document.getElementById("btn8").style.display="none";
-				}
-				else if(num==9)
-				{ 
-					var a = document.getElementById("btn9").style.display="none";
-				}
 			check2();
 				
 			}
@@ -844,3 +827,4 @@ function tre()
 		i++;
 	}
 }
+
